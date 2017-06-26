@@ -37,9 +37,10 @@ var VehicleClass = (function () {
     return VehicleClass;
 }());
 __decorate([
-    MethodDecorator //
+    MethodDecorator // Calling methode decorator.
 ], VehicleClass.prototype, "displayVehicleDetails");
 VehicleClass = __decorate([
-    VehicleParamDecorator("a", 'b'),
-    VehicleDecorator
+    VehicleParamDecorator("a", 'b') // Calling class decorator with params.
+    ,
+    VehicleDecorator // Calling class decorator.
 ], VehicleClass);

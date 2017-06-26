@@ -27,15 +27,15 @@ function MethodDecorator (
     console.log("Mehod Decorator called on", target, propertykey, descriptor);
 }
 
-@VehicleParamDecorator("a",'b')
-@VehicleDecorator
+@VehicleParamDecorator("a",'b') // Calling class decorator with params.
+@VehicleDecorator // Calling class decorator.
 class VehicleClass {
     name: string;
 
     constructor() {
         this.name = "BMW";
     }
-    @MethodDecorator //
+    @MethodDecorator // Calling methode decorator.
     displayVehicleDetails () {
     }
 }
